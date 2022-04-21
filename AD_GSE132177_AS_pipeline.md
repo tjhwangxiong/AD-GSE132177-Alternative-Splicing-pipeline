@@ -319,8 +319,6 @@ vim b2.txt
 rmats.py --b1 ./b1.txt --b2 ./b2.txt --gtf ./Mus_musculus.GRCm39.105.gtf -t paired --readLength 150 --nthread 8 --od ./output --tmp ./tmp_output
 ```
 
-![1650082490646](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650082490646.png)
-
 ###### 6.2.3 Check resuts
 
 ```shell
@@ -328,13 +326,9 @@ cd ~/project/AS/AD_GSE132177/splicing/rmats2/output
 ll -h
 ```
 
-![1650082588748](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650082588748.png)
-
 ```shell
 cat summary.txt
 ```
-
-![1650082635784](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650082635784.png)
 
 #### 7. AS result plots
 
@@ -364,10 +358,6 @@ rmats2sashimiplot \
 cd ~/project/AS/AD_GSE132177/splicing/rmats2sashimiplot/output/Sashimi_plot
 #download the pdf files.
 ```
-
-Tmem234 for example.
-
-![1650085852423](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650085852423.png)
 
 ###### 7.1.2 Plots by group
 
@@ -401,8 +391,6 @@ rmats2sashimiplot \
 ```shell
 cd ~/project/AS/AD_GSE132177/splicing/rmats2sashimiplot/group_output/Sashimi_plot
 ```
-
-![1650086400456](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650086400456.png)
 
 #### 8. AS statistics with maser
 
@@ -495,14 +483,10 @@ AD_Tmem234
 maser::display(AD_Tmem234, "SE")
 ```
 
-![1650531498678](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650531498678.png)
-
 ```R
 #PSI levels for gene events can be plotted using plotGenePSI(), indicating a valid splicing type.
 plotGenePSI(AD_Tmem234, type = "SE", show_replicates = T)
 ```
-
-![1650531550666](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650531550666.png)
 
 ##### 8.2 Global splicing plots
 
@@ -522,24 +506,6 @@ pca(AD_top)
 boxplot_PSI_levels(AD_top,type = "RI")
 splicingDistribution(AD_top)
 ```
-
-volcano(AD_filt, fdr = 0.05, deltaPSI = 0.1, type = "SE")
-
-![1650531954435](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650531954435.png)
-
-dotplot(AD_filt, fdr = 0.05, deltaPSI = 0.1, type = "SE")
-
-![1650531982751](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650531982751.png)
-
-pca(AD_top)
-
-![1650532004478](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532004478.png)
-
-splicingDistribution(AD_top)
-
-![1650532028909](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532028909.png)
-
-
 
 ##### 8.3 AS event plots
 
@@ -590,32 +556,9 @@ plotTranscripts(Sema6c_gene, type = "A5SS", event_id = 3516,
                 gtf = ens_gtf, zoom = TRUE)
 ```
 
-Atr 'SE' event
-
-![1650532305698](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532305698.png)
-
-
-
-Actr5 'RI' event
-
-![1650532402331](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532402331.png)
-
-Tmem234 'MXE' event
-
-![1650532664620](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532664620.png)
-
-Tmem138 'A3SS' event
-
-![1650532786537](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532786537.png)
-
-Sema6c 'A5SS' event
-
-![1650532850739](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\1650532850739.png)
-
 That's the end.
 
 > **Xiong Wang**
 > Department of Laboratory Medicine, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan 430030, China. Email: [wangxiong@tjh.tjmu.edu.cn]()
 
 April 21, 2022 
-
