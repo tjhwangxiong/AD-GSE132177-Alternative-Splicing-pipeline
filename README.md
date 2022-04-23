@@ -40,7 +40,7 @@ do
 done
 ###
 
-nohup sh axel_download.sh >axel_download.log
+nohup sh axel_download.sh >axel_download.log &
 
 #Check md5 nunmber
 cat filereport_read_run_PRJNA* | awk -F'\t' 'NR>1{print$3}' | tr ';' '\n' >md51 
