@@ -577,6 +577,6 @@ biotrainee, for generously sharing their experience and codes.
 
 April 21, 2022 
 
-**Citation:** Lu Y, Yue D, Xie J, Cheng L and Wang X (2022) Ontology Specific Alternative Splicing Changes in Alzheimer’s Disease. Front. Genet. 13:926049. doi: 10.3389/fgene.2022.926049
+**Citation:** Lu Y, Yue D, Xie J, Cheng L and Wang X (2022) Ontology Specific Alternative Splicing Changes in Alzheimer’s Disease. Front. Genet. 13:926049. [doi: 10.3389/fgene.2022.926049](https://www.frontiersin.org/articles/10.3389/fgene.2022.926049/full)
 
 
